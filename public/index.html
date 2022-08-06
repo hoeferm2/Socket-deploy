@@ -70,7 +70,7 @@
     <script src="/socket.io/socket.io.js"></script>
     <script>
         // const socket = io
-        const socket = io('https://matt-chat-test-deploy.herokuapp.com/');
+        const socket = io.connect('https://matt-chat-test-deploy.herokuapp.com/');
 
         const messages = document.getElementById('messages');
         const form = document.getElementById('form');
