@@ -9,10 +9,9 @@ const INDEX = '/index.html';
 
 
 app.get('/', (req, res) => {
-    res.sendFile(INDEX, { root: __dirname + '/public' });
+    res.sendFile(INDEX, { root: __dirname });
 });
 
-setInterval(() => io.emit('time', new Date().toTimeString()), 1000);
 
 io.on('connection', (socket) => {
     console.log('a user connected');
